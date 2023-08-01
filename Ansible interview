@@ -1,0 +1,100 @@
+1. What is configuration management and how does it help organizations?\
+A Configuration management system allows the enterprise to define settings in a consistent manner, then to build and maintain them according to the established baselines. A configuration management plan should include a number of tools that: Enable classification and management of systems in groups.
+2. which CM tool use in your project?\
+3.what is the difference between Ansible and chef and puppet?\
+The distinctive difference between Ansible, Chef, and Puppet is the underlying script. While Puppet is coded in Ruby, Ansible utilizes Python and YAML scripts, and Chef is built on Ruby like Puppet.
+4.what is difference b/w Ansible and Terraform?\
+They both have products available with enterprise features such as a Web UI or SSO. The primary difference for their community versions is that Ansible is an multi-purpose automation tool, whereas Terraform is an infrastructure as code tool
+5.what is ansible architecture? and how it will work?\
+Ansible is an open-source configuration management tool owned by RedHat. Ansible can configure any resource on a server through its idempotent playbooks and even run ad-hoc scripts. Ansible takes complex or cumbersome manual tasks and orchestrates them by automating the process
+6.what the components in Ansible?\
+This is a summary of the Ansible Components :
+Inventories : -Static or Local /etc/ansible/hosts. ...
+Modules : -Modules are the tools in the workshop. ...
+Variables : ...
+Ansible Facts. ...
+Play and Playbooks. ...
+Configuration Files : ...
+Templates : ...
+Handlers 
+7.what is Idempotency?\
+Idempotence, in programming and mathematics, is a property of some operations such that no matter how many times you execute them, you achieve the same result. In programming, idempotence can be a property of many different code elements, including functions, methods, requests and statements.
+8.what is ansible ad-hoc commands?\
+Ansible ad hoc commands are CLI commands used for simple and one-time tasks. One-time tasks include checking whether the nodes are reachable over SSH, shutting down all nodes, and so on. They can easily be run at scale and even concurrently on several hosts at the same time with a single command
+9.what is inventory file? how do add multiple agent at a time?\
+An inventory file is a document containing listings, usually electronic, of every item in a company's inventory, including items in stock or expected to be in stock shortly. Items are listed and identified by categories, and are put in a particular inventory group depending on item attributes.
+If the location given to -i in Ansible is a directory (or as so configured in ansible. cfg ), Ansible can use multiple inventory sources at the same time. When doing so, it is possible to mix both dynamic and statically managed inventory sources in the same ansible run.
+10. is there any module to connect new agent without copy ssh key/password?\
+How to Set Up Passwordless SSH Login
+Before You Start: Check for Existing SSH Keys.
+Step 1: Generate SSH Key Pair.
+Step 2: Upload Public Key to Remote Server. Option 1: Upload Public Key Using the ssh-copy-id Command. ...
+Step 3: Log in to Server Without Password.
+Optional: Troubleshooting Remote Server File Permissions.
+11.what is a Ansible module and what are modules you used?\
+Ansible modules are units of code that can control system resources or execute system commands. Ansible provides a module library that you can execute directly on remote hosts or through playbooks. You can also write custom modules.
+12.what is a play book and what are sessions in play book?\
+ a notebook containing diagrammed football plays. 3. : a stock of usual tactics or methods.The playbook, which may vary in complexity and length based on the organization's size and needs, typically encapsulates a spectrum of strategic and operational elements. These include, but are not limited to, business strategy, marketing blueprints, product development roadmaps, company policies, and cultural ethos.
+13. what is play in playbook?\
+Playbooks are collections of one or more plays that are performed in a certain order. A play is an ordered sequence of tasks performed against hosts from your inventory. The task to be done is defined by plays. Each play has a list of hosts to configure and responsibilities to complete.
+14.how to test ansible projects?\
+Modules That Are Useful for Testing
+Ansible is checking them automatically. Rather than checking for a user to exist, consider using the user module to make it exist. Ansible is a fail-fast system, so when there is an error creating that user, it will stop the playbook run. You do not have to check up behind it.
+15.what is \'93become\'94, \'93become_user\'94?\
+RTF code consists of plaintext, commands, escapes, and groups: Plaintext contains seven bit (US ASCII) characters except for \, {, and }. Returns and linefeeds can be present but are ignored, and are harmless (as long as they are not in the middle of an RTF command).
+16.how do you access shell environments variable?\
+In Linux, environment variables are typically accessed through the shell. The shell is a command-line interface that interprets and executes commands entered by the user
+17.how do you manage multiple tasks in play book or how to execute specific tasks in Ansible play book?\
+How do I run multiple tasks in Ansible playbook?
+If you want to run multiple tasks in a playbook concurrently, use async with poll set to 0. When you set poll: 0 , Ansible starts the task and immediately moves on to the next task without waiting for a result. Each async task runs until it either completes, fails or times out (runs longer than its async value).
+18. how do you filter ansible tasks with  the help of tags?\
+Ansible supports a “tags:” attribute for this reason. When you execute a playbook, you can filter tasks based on tags in two ways: On the command line, with the --tags or --skip-tags options. In Ansible configuration settings, with the TAGS_RUN and TAGS_SKIP options.
+19. how do you manage secrets in playbook ? \
+Using the Ansible Vault to Manage Secrets
+Ansible has a tool, Ansible Vault, that can facilitate secrets management. The Vault encrypts information, which you can then use within your Ansible playbooks. With some setup, Ansible Vault can make secrets both secure and accessible
+20.what is ansible vault?\
+Ansible Vault is a feature of ansible that allows you to keep sensitive data such as passwords or keys in encrypted files, rather than as plaintext in playbooks or roles. These vault files can then be distributed or placed in source control.
+21.what is role in Ansible? what the components in Role?\
+In Ansible, the role is the primary mechanism for breaking a playbook into multiple files. This simplifies writing complex playbooks, and it makes them easier to reuse. The breaking of playbook allows you to logically break the playbook into reusable components.
+22. what is handlers?\
+Ansible provides feature named handlers, which is like a task but will only run when called by a notifier in another task. This feature is important because your requirements for running a task may depend on the state of a service, existence of a file or a follow up tasks when state changed.
+23.what is Ansible galaxy?\
+Ansible Galaxy is your source for community content for Ansible, a popular multipurpose automation tool. In Ansible Galaxy, you can find roles and collections for just about any configuration management scenario
+24. which module use to get agents info? \
+You can access information about Ansible operations, including the python version being used, the hosts and groups in inventory, and the directories for playbooks and roles, using “magic” variables. Like connection variables, magic variables are Special Variables.
+25.what is facts and how to disable facts while executing playbook?\
+You can use gather_facts: no keyword in your playbook. It will disable this task automatically. You can also see the below playbook for more understanding
+26. Is it possible to increase Ansible  reboot module to more than 600 seconds?\
+If you want to set a longer timeout limit for a certain task in your playbook, use async with poll set to a positive value. Ansible will still block the next task in your playbook, waiting until the async task either completes, fails or times out.
+27. how do restart a system using ansible and how do you execute modules after reboot?\
+Use systemctl restart ansible-tower to restart services on clustered environments instead. Also you must restart each cluster node for certain changes to persist as opposed to a single node for a localhost install.
+2. Server Restart Options in Ansible
+2.1. Server Reboot vs. Restart.
+2.2. Server Restart as a Task.
+2.3. Wait for Server Restart as a Task.
+2.4. Server Restart with Wait Using Handlers.
+3.1. Pre-Reboot.
+3.2. Reboot.
+3.3. Pause and Resume the Playbook.
+28. How to configure a jump host for accessing servers that have no direct access?\
+The simplest way to connect to a target server via a jump host is using the -A and -J flags from the command line. This tells ssh to make a connection to the jump host and then establish a TCP forwarding to the target server, from there (make sure you've Passwordless SSH Login between machines)
+30. How do you generate encrypted password for the user modules?\
+How do I generate encrypted passwords for the user module?  Use the integrated Hashing and encrypting strings and passwords to generate a hashed version of a password. You shouldn't put plaintext passwords in your playbook or host_vars; instead, use Using encrypted variables and files to encrypt sensitive data.
+31. How to handle various machines requiring different user accounts or ports to login?\
+By default, Ansible tries to connect to the nodes as your current system user, using its corresponding SSH keypair. To connect as a different user, append the command with the -u flag and the name of the intended user: ansible all -m ping -u sammy.
+32. can you create your own modules?\
+Creating a Module for Your Own Work
+There are two steps required to create your own custom module: (1) write a module file and (2) add a line to your ~/. bashrc file to update the MODULEPATH. The example module file above (with filename 1.2) sets two environment variables and loads two system modules.
+33. what is ask_pass, ask_sudo_pass and ask_vult_pass?\
+Ask_pass is the control module in an Ansible playbook....controls whether an Ansible playbook should prompt for a sudo password by default when sudoing.During playbook runtime, we will pass the --ask-vault-pass parameter to prompt for the inventory's encryption password upon which the playbook will be executed
+34. what is module utility in ansible?\
+Ansible provides a number of module utilities, or snippets of shared code, that provide helper functions you can use when developing your own modules
+35. what is Ansible Tower and what are the feature of it?\
+Ansible Tower is designed to be the hub for all of your automation tasks.  In general, the main reasons enterprises use Tower fall under these categories: Managing credentials. Making Ansible inventory management more intuitive using the GUI. Managing job templates and job template workflows
+36. which version of ansible you\'92re using?\
+run the ansible --version command 
+37. what are the playbooks you written?\
+OWN How are playbooks written?
+Playbooks are written in YAML, a human-readable markup language. A playbook typically consists of one or more plays, a collection of tasks run in sequence. Each task is a single instruction that Ansible can execute, such as installing a package, configuring a service, or copying a file
+38. how does ansible server connect windows systems?\
+Ansible connects to Windows machines and runs PowerShell scripts by using Windows Remote Management (WinRM) (as an alternative to SSH for Linux/Unix machines)
