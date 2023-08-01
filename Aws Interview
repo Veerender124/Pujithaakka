@@ -1,0 +1,84 @@
+1.Describe AWS in brief.
+Amazon Web Service – AWS is known as a cloud computing platform. It is also a collection of remote computing services. The new infrastructure of cloud computing is also known as IaaS or Infrastructure as a Service.
+2.What is S3 in AWS?
+S3 is a simple storage device used to store and retrieve the bulk amount of data at any time on the web. The Payment model for S3 is “pay as you go.”
+3.Explain AMI in brief.
+Amazon Machine Image – is a template that contains information regarding the application, an operating system, and application server which is required to launch an instance. We can launch an instance of different AMI as per our requirements.
+4.What are the key components of AWS?
+Cloud Watch: used to monitor AWS resources
+Elastic Block Store (EBS): used as persistent storage volumes
+Route 53: a DNS web service
+Identity and Access Management: used as identity management for AWS account
+Simple Storage Device or (S3): used to store and retrieve the bulk amount of data at any time on the web.
+Elastic Compute Cloud (EC2): used to provide on-demand computing resources for hosting applications.
+5.How can we send a request to Amazon S3?
+Amazon S3 is used for REST service, and we can use REST API or the AWS SDK wrapper libraries for sending requests. SDK wrapper also used to wrap the underlying Amazon S3 REST API.
+6.Explain T2 instance in brief.
+We can use T2 instance to provide moderate baseline performance and to burst up to higher performance as per our requirements
+7.Which subnet is used to launch a database server in VPC with private and public subnets?
+Private subnet should be used to launch the database server in VPC with private and public subnets.
+8.Explain the use of the buffer in Amazon web services?
+The buffer is used for making the system more robust to manage traffic by synchronizing different components. Generally, Requests are received and proceed in an unbalanced way by elements, but after using a buffer, the items will work with the same speed and in a balanced manner to provide faster services.
+9.Explain key-pairs in AWS?
+Key-pairs are the primary login information for virtual machines. Key-pairs contains the public key and a private key. We can use them to connect instances.
+10.Enlist the different types of instances.
+Following are the different types of instances:
+General-purpose
+Computer Optimized
+Memory-Optimized
+Storage Optimized
+Accelerated Computing
+11.How many Elastic IPs are allowed to create for each AWS account and When EC2 was officially launched?
+5 VPC Elastic IP addresses are permitted for each AWS account.EC2 was officially launched in the year 2006
+12.What is the default storage class in Simple Storage Device – S3?
+A Standard frequently accessed is the default storage class in S3?.
+13.What are the possible connection issues user might face While connecting to an instance?
+The possible connection errors user might encounter while connecting instances are as follows:
+User key not recognized by the server
+Connection timed out
+An unprotected private key file
+Host key not found, permission denied
+Error using MindTerm on Safari Browser
+Server refused our key or No supported authentication method available.
+Error using Mac OS X RDP Client
+14.Explain the edge locations in brief.
+An edge location is an area mainly used for caching all the contents. When the user tries to access content, the edge locations are automatically used for searching contents
+15.What is VPC in AWS?
+Virtual Private Cloud -VPC is used to customize network configuration. It is an isolated network from other networks in the cloud. It provides facilities like having your IP address range, internet gateways, subnet, and security groups.
+16.Explain snowball in brief.
+Snowball is used as a data transport option in AWS. We can transfer a large amount of data from one place to another. It also helps in reducing network costs.
+17.What is a redshift in AWS?
+Redshift is a big data warehouse product. It is not only fast and powerful but also fully managed data warehouse service in the cloud.
+18.What are the advantages of auto-scaling?
+The advantages of autoscaling are as follows:
+Better availability
+Better cost management
+Offers fault tolerance
+19.What do you mean by subnet and How many subnets can a user have per VPC?
+The subnet is the large section of IP Address divided into chunks. User can have 200 subnets per VPC.
+20.Enlist the types of AMI provided by AWS.
+The following are types of AMI provided by AWS:
+Instance store backed
+EBS backed
+21.Enlist the DB engines which can be used in AWS RDS.
+The following are the DB engines which can be used in AWS RDS.
+MS-SQL DB
+MariaDB
+MYSQL DB
+OracleDB
+PostgreDB
+22.Explain Amazon EMR in brief.
+EMR, as survived cluster stage, helps the user to interpret the working of data structures before the intimation. Apache Spark and Apache Hadoop on the Amazon Web Services helps the user to check a large amount of data. We can prepare data for marketing intellect and the analytics goals workloads using Apache Hive and using other relevant open-source designs.
+23.Explain the important features of Amazon cloud search in brief?
+Essential features of the Amazon cloud are as follows:
+Boolean searches
+Prefix Searches
+Range searches
+Entire text search
+AutoComplete advice
+24.Enlist the storage class available in Amazon s3.
+Storage classes available with Amazon s3 are:
+Amazon S3 standard
+Amazon S3 standard-infrequent Access
+Amazon S3 Reduced Redundancy Storage
+Amazon Glacier
