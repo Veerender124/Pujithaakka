@@ -1,0 +1,32 @@
+ #1. What do you understand by Terraform?
+Terraform is an open-source IAC tool created by HashiCorp. It is used to create, update, delete and version your infrastructure on multiple cloud platforms.
+2. What are the reasons to choose Terraform for DevOps?
+Using Terraform for provisioning infrastructure leaves no room for human errors, hence improving the quality, consistency, and efficiency of Cloud and on-prem infrastructure. Terraform uses the HCL language, which is fairly similar to JSON and easy to learn and use. Unlike the other IAC tools offered by cloud providers like Cloudformation for AWS, we can use Terraform with a number of cloud platforms simultaneously. This avoids the need to learn multiple IAC tools and improves the scope of collaboration.
+3. How does Terraform work?
+Terraform uses plugins called the Terraform providers to interact with APIs on Cloud Platforms and provision our resources. As an end-user, terraform workflow has three steps.
+
+Write: Author the infrastructure as code.
+
+Plan: Preview changes Terraform will make before applying.
+
+Apply: Provision the infrastructure and apply the changes.
+4. What do you mean by Terraform cloud?
+Terraform Cloud is a remote environment that is optimized for the Terraform workflow. It provides features like workspaces and state locking, which allows people in big teams to collaborate.
+5. What do you understand by State in Terraform?
+As an IAC tool, terraform should know the current state of configurations and infrastructure under its management. Terraform stores this information in a file called the state file.
+6. What is the benefit of Terraform State?
+The Terraform State allows Terraform to map real-world resources to your configuration, keep track of metadata, and improve performance when planning changes for complex infrastructures. It is a critical component of Terraform.
+7. What do you understand by Terraform Backend?
+Terraform backend is the platform where the Terraform State Snapshots are stored. By default, Terraform uses a backend called local to store state as a local file on your disk. All other supported backends are some kind of remote storage service.
+8. What is a provider in Terraform?
+Providers in Terraform are plugins that allow Terraform to interact with cloud providers, SaaS providers, and other APIs. For example, if we plan on using Terraform to provision infrastructure on AWS, we will need to declare an AWS provider in our configuration files.
+9. Who maintains Terraform Providers?
+Providers are distributed separately from Terraform itself. As a Terraform user, anyone can develop their own providers. There are some standard providers that are maintained explicitly by Hashicorp.
+10. What is Sentinel?
+Sentinel is a policy as a code tool used to enforce standard configurations for resources being deployed by Terraform. It can be used by organizations for compliance and governance purposes
+11. What do you understand by modules in Terraform?
+A Terraform module is a standard container for multiple resources used together to provision and configure resources. For example, you can create a “VPC module” for your organization that provisions a standard VPC and other resources like Subnets and Internet Gateways. Modules can be shared publically via the Public module registry and privately via the Private Module registry.
+12. What is the benefit of using modules in terraform?
+Terraform modules allow us to create logical abstraction on the top of a resource set. Using modules allows us to maintain and reuse a standard configuration for resources. They can be versioned and shared with members of your teams to provision resources in a standard way.
+13. What is the Private Module Registry?
+A Private Module Registry Terraform Cloud feature allows us to share Terraform modules across our organization.
